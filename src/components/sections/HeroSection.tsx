@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { animate, createTimeline, utils } from 'animejs';
 import { BUSINESS_INFO } from '../../constants/businessInfo';
+import { getAssetUrl } from '../../utils/assets';
 
 const WhatsAppIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -72,7 +73,7 @@ export function HeroSection() {
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/banner_horizontal.jpg"
+          src={getAssetUrl('/banner_horizontal.jpg')}
           alt=""
           aria-hidden="true"
           className="w-full h-full object-cover object-center"

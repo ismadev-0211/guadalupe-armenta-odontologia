@@ -1,6 +1,7 @@
 import { BUSINESS_INFO } from '../../constants/businessInfo';
 import { SectionTitle } from '../ui/SectionTitle';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
+import { getAssetUrl } from '../../utils/assets';
 
 const features = [
   {
@@ -64,7 +65,7 @@ export function AboutSection() {
             />
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="/alinea_tu_sonrisa.jpeg"
+                src={getAssetUrl('/alinea_tu_sonrisa.jpeg')}
                 alt="Alinea tu sonrisa con ortodoncia — Guadalupe Armenta Odontología"
                 className="w-full h-full object-cover aspect-[4/5] lg:aspect-auto lg:h-[560px]"
                 loading="lazy"

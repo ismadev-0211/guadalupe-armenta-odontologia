@@ -1,3 +1,5 @@
+import { getAssetUrl } from '../utils/assets';
+
 export const BUSINESS_INFO = {
   name: 'Guadalupe Armenta Odontología',
   tagline: 'Especialista en Ortodoncia',
@@ -52,5 +54,5 @@ export const BUSINESS_INFO = {
       'https://maps.google.com/?q=Jiménez+202,+San+Felipe,+Guanajuato',
   },
 
-  logo: '/logo.jpeg',
+  get logo() { return getAssetUrl('/logo.jpeg'); },
 } as const;
